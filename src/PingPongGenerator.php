@@ -15,13 +15,15 @@
             while ($i <= $input_number) {
                 if( $i % 3 == 0) {
                     array_push($list_of_numbers, "ping");
-                    ++$i;
+                }
+                elseif ( $i % 5 == 0 ) {
+                    array_push($list_of_numbers, "pong");
                 }
                 else
                 {
                     array_push($list_of_numbers, $i);
-                    ++$i;
                 }
+                ++$i;
             }
 
             return $list_of_numbers;
