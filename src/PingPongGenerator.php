@@ -13,8 +13,15 @@
             $i = 1;
 
             while ($i <= $input_number) {
-                array_push($list_of_numbers, $i);
-                ++$i;
+                if( $i % 3 == 0) {
+                    array_push($list_of_numbers, "ping");
+                    ++$i;
+                }
+                else
+                {
+                    array_push($list_of_numbers, $i);
+                    ++$i;
+                }
             }
 
             return $list_of_numbers;
