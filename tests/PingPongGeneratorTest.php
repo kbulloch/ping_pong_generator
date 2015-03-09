@@ -20,5 +20,17 @@
             $correct_array_of_numbers = array(1, 2, 3, 4, 5);
             $this->assertEquals($correct_array_of_numbers, $result);
         }
+
+        function testPingAtThree()
+        {
+            //Arrange
+            $test_ping_at_three = new PingPongGenerator;
+            $input = 6;
+            //Act
+            $result = $test_ping_at_three->generatePingPongArray($input);
+            //Assert
+            $ping_at_three_array = array(1, 2, 'ping', 4, 5, 'ping');
+            $this->assertEquals($ping_at_three_array, $result);
+        }
     }
 ?>
