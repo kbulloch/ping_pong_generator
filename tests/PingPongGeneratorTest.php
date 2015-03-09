@@ -54,14 +54,15 @@
         {
             //Arrange
             $test_ping_and_pong = new PingPongGenerator;
-            $input = 10;
+            $input = 15;
 
             //Act
             $result = $test_ping_and_pong->generatePingPongArray($input);
 
             //Assert
-            $ping_and_pong_array = array(1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong');
+            $ping_and_pong_array = array(1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'ping-pong');
             $this->assertEquals($ping_and_pong_array, $result);
         }
+
     }
 ?>

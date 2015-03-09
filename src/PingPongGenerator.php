@@ -13,14 +13,16 @@
             $i = 1;
 
             while ($i <= $input_number) {
-                if( $i % 3 == 0) {
+                if( $i % 15 == 0 ) {
+                    array_push($list_of_numbers, "ping-pong");
+                }
+                elseif( $i % 3 == 0 ) {
                     array_push($list_of_numbers, "ping");
                 }
-                elseif ( $i % 5 == 0 ) {
+                elseif( $i % 5 == 0 ) {
                     array_push($list_of_numbers, "pong");
                 }
-                else
-                {
+                else {
                     array_push($list_of_numbers, $i);
                 }
                 ++$i;
