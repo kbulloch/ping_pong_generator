@@ -1,6 +1,6 @@
 # Ping Pong Generator
 
-#####By Kyle Bulloch
+#####By Kyle Bulloch and Kyle Giard-Chase
 
 -----
 
